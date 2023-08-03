@@ -1,10 +1,3 @@
-Couldn't find a complete one online, if you want to get the resources from a different version:
-
-1_ Get the textures from the client jar file (on MultiMC you can find them in MultiMC/libraries/com/mojang/minecraft)
-
-2_ Get the sounds, icons and lang files from the index file corresponding to your version (on MultiMC MultiMC/assets/indexes), fell free to use this Python script to do it:
-
-```python
 import os
 import json
 import shutil
@@ -33,13 +26,4 @@ if __name__ == "__main__":
 
     # Call the function to copy the files
     copy_files_from_json(args.json_file, args.src_dir, args.dest_dir)
-```
-
-Example:
-
-```bash
-python3 extract.py ~/MultiMC/assets/indexes/3.json ~/MultiMC/assets/objects ~/MultiMC/assets/output
-
-```
-
 
